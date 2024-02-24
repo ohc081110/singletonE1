@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.clientsingle;
 
 /**
@@ -9,13 +5,30 @@ package com.mycompany.clientsingle;
  * @author OMAR HC
  */
 public class Singleton {
+    //Declaración del objeto llamado pSingleton de la clase Singleton
     private static Singleton pSingleton;  //null
-    private Singleton(){}
+    
+    //Para evitar instancia mediante operador "new"
+    //constructor
+    private Singleton(){
+    
+    }
+    //Para obtener la instancia unicamente por este metodo
+    //Notese la palabra reservada "static" hace posible el acceso mediante Clase.metodo
     public static Singleton getInstance(){
         if (pSingleton==null)
             pSingleton = new Singleton();
     return pSingleton;
     }
-}
 
-//ctrl+shiff+c
+	//Método de prueba
+	public void opensesion() {
+		System.out.println("Me conecté");
+	}
+	
+	//Método de prueba
+	public void closesesion() {
+		System.out.println("Me desconecté");
+	}
+
+}
