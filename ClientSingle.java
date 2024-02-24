@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.clientsingle;
 
 /**
@@ -16,5 +12,12 @@ public class ClientSingle {
       //Singleton single2 = Singleton.getInstance();
       System.out.println("This is de hashcode1: "+single1.hashCode());
       //System.out.println("This is de hashcode2: "+single2.hashCode());
+      
+      //acceso los metodos
+      single1.opensesion();
+      single1.closesesion();
+      
+      
     }
 }
+
